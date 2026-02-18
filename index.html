@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lino | Official Website</title>
+<style>
+/* ===== Reset & Base ===== */
+body, h1, h2, h3, p, ul, li {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f6;
+    color: #222;
+    transition: background 0.3s, color 0.3s;
+}
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
+/* ===== Header & Nav ===== */
+header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 15px 30px;
+    background: white;
+    position: sticky; top: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    z-index: 1000;
+}
+nav a {
+    margin-left: 20px;
+    font-weight: bold;
+    color: #444;
+    transition: color 0.3s;
+}
+nav a:hover { color: #6a0dad; }
+.lang-btn { cursor: pointer; font-weight: bold; }
+
+/* ===== Sections ===== */
+.section {
+    max-width: 900px; margin: auto;
+    padding: 60px 20px;
+}
+h1, h2 { color: #6a0dad; margin-bottom: 15px; }
+
+/* ===== Buttons ===== */
+.button {
+    display: inline-block; background: #6a0dad;
+    color: white; padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: opacity 0.3s;
+}
+.button:hover { opacity: 0.8; }
+
+/* ===== Products ===== */
+.product {
+    background: white; padding: 20px; margin-bottom: 20px;
+    border: 1px solid #ddd; border-radius: 5px;
+}
+.product h3 { margin-bottom: 5px; }
+.product p { margin-bottom: 10px; }
+
+/* ===== Dark Mode ===== */
+body.dark {
+    background: #1a1a1a; color: #eee;
+}
+body.dark header { background: #111; box-shadow: 0 2px 10px rgba(255,255,255,0.05);}
+body.dark .product { background: #222; border-color: #444;}
+body.dark .button { background: #9b5de5; }
+
+/* ===== Responsive ===== */
+@media(max-width:768px){
+    header { flex-direction: column; align-items: flex-start; }
+    nav a { margin: 10px 0 0 0; }
+}
+</style>
+</head>
+<body>
+
+<header>
+<div>
+<span class="lang-btn" onclick="switchLang()">FR / EN</span>
+<span class="lang-btn" style="margin-left:20px;" onclick="toggleDark()">🌙</span>
+</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#music">Music</a>
+<a href="#store">Store</a>
+<a href="#lessons">Lessons</a>
+<a href="#freelance">Freelance</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<!-- ===== English Version ===== -->
+<div id="content-en">
+
+<section id="home" class="section">
+<h1>Lino</h1>
+<p id="bio-en">Lino is a multi-instrumentalist, producer and writer raised in Ireland by Belgian parents. Starting on bass in his father’s band, he has honed his craft for over two decades. He writes, records and produces everything himself — blending live instruments and electronic production. Funk, rock, hip hop, jazz, reggae — all filtered through groove, rhythm and melody. Independent artist. Music in his bones.</p>
+<div>
+<img src="profile-placeholder.jpg" alt="Lino Profile" style="width:100%; max-height:400px; object-fit:cover; margin-top:20px;">
+</div>
+</section>
+
+<section id="music" class="section">
+<h2>Music</h2>
+<p>Purchase high-quality WAV files of original music. Direct support, one-click purchase.</p>
+
+<!-- Example Product -->
+<div class="product">
+<h3>Track Name</h3>
+<p>Description of track.</p>
+<p><strong>Price: 5 CHF</strong></p>
+<!-- Stripe/PayPal Button Placeholder -->
+<button class="button" onclick="alert('Setup Stripe/PayPal here')">Buy Now</button>
+</div>
+
+</section>
+
+<section id="store" class="section">
+<h2>Store – PDFs & Sheet Music</h2>
+<p>Purchase lesson PDFs, theory sheets, transcriptions. Some items may be free for enrolled students.</p>
+
+<div class="product">
+<h3>Guitar Transcription PDF</h3>
+<p>Tab and notation for your practice.</p>
+<p><strong>Price: 15 CHF</strong></p>
+<button class="button" onclick="alert('Setup Stripe/PayPal here')">Buy Now</button>
+</div>
+
+<div class="product">
+<h3>Music Theory Workbook</h3>
+<p>Exercises, harmony, ear training.</p>
+<p><strong>Price: 20 CHF</strong></p>
+<button class="button" onclick="alert('Setup Stripe/PayPal here')">Buy Now</button>
+</div>
+
+</section>
+
+<section id="lessons" class="section">
+<h2>Lessons</h2>
+<p>Guitar, Bass, Music Production. All levels. Online or in Lausanne.</p>
+<h3>Pricing</h3>
+<ul>
+<li>60 min – 60 CHF</li>
+<li>45 min – 45 CHF</li>
+<li>30 min – 35 CHF</li>
+<li>16 Lesson Pack – 960 CHF</li>
+</ul>
+
+<p>Download lesson PDFs after payment, or access free files for enrolled students.</p>
+
+<p>Booking: WhatsApp / Phone: +41 76 280 69 26<br>Email: linoschockaert@gmail.com</p>
+</section>
+
+<section id="freelance" class="section">
+<h2>Freelance Musician</h2>
+<p>Available for:</p>
+<ul>
+<li>Session Bassist / Guitarist</li>
+<li>Studio Production</li>
+<li>Music Production Lessons</li>
+</ul>
+<p>Contact for pricing and booking. Professional, groove-driven, adaptable across genres.</p>
+</section>
+
+<section id="contact" class="section">
+<h2>Contact</h2>
+<p>Email: linoschockaert@gmail.com</p>
+<p>Phone: +41 76 280 69 26</p>
+<p>Instagram: @_linoschockaert</p>
+<p>YouTube (Music): @linoschockaert8825</p>
+<p>YouTube (Lessons): @linomusicschool</p>
+
+<h3>Join the mailing list:</h3>
+<form onsubmit="alert('Setup Mailchimp / automated emails here'); return false;">
+<input type="email" placeholder="Your email" required>
+<button type="submit" class="button">Subscribe</button>
+</form>
+</section>
+
+</div>
+
+<!-- ===== French Version ===== -->
+<div id="content-fr" style="display:none;">
+
+<section id="home" class="section">
+<h1>Lino</h1>
+<p id="bio-fr">Lino est un multi-instrumentiste, producteur et compositeur, élevé en Irlande par des parents belges. Débutant à la basse dans le groupe de son père, il perfectionne son art depuis plus de deux décennies. Il écrit, enregistre et produit tout lui-même — mélange d’instruments live et de production électronique. Funk, rock, hip hop, jazz, reggae — le tout avec groove, rythme et mélodie. Artiste indépendant. La musique dans ses veines.</p>
+<div>
+<img src="profile-placeholder.jpg" alt="Lino Profil" style="width:100%; max-height:400px; object-fit:cover; margin-top:20px;">
+</div>
+</section>
+
+<section class="section">
+<h2>Musique</h2>
+<p>Achetez vos fichiers WAV de musique originale. Support direct, achat en un clic.</p>
+</section>
+
+<section class="section">
+<h2>Boutique – PDFs & Partitions</h2>
+<p>Achetez des PDFs de cours, partitions, exercices de théorie. Certains fichiers peuvent être gratuits pour les étudiants inscrits.</p>
+</section>
+
+<section class="section">
+<h2>Cours</h2>
+<p>Guitare, Basse, Production Musicale. Tous niveaux. En ligne ou à Lausanne.</p>
+</section>
+
+<section class="section">
+<h2>Musicien Freelance</h2>
+<p>Disponible pour : bassiste / guitariste, studio, cours de production.</p>
+</section>
+
+<section class="section">
+<h2>Contact</h2>
+<p>Email: linoschockaert@gmail.com</p>
+<p>Téléphone: +41 76 280 69 26</p>
+<p>Instagram: @_linoschockaert</p>
+<p>YouTube (Musique): @linoschockaert8825</p>
+<p>YouTube (Cours): @linomusicschool</p>
+
+<h3>Inscrivez-vous à la newsletter :</h3>
+<form onsubmit="alert('Setup Mailchimp / emails automatisés ici'); return false;">
+<input type="email" placeholder="Votre email" required>
+<button type="submit" class="button">S’abonner</button>
+</form>
+</section>
+
+</div>
+
+<footer style="text-align:center; padding:40px; background:white;">
+<p>© 2026 Lino – Independent Artist</p>
+</footer>
+
+<script>
+function switchLang() {
+    var en = document.getElementById("content-en");
+    var fr = document.getElementById("content-fr");
+    if (en.style.display === "none") {
+        en.style.display = "block";
+        fr.style.display = "none";
+    } else {
+        en.style.display = "none";
+        fr.style.display = "block";
+    }
+}
+function toggleDark() {
+    document.body.classList.toggle("dark");
+}
+</script>
+</body>
+</html>
