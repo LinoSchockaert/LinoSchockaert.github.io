@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lino | Official Website</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f6;
+    color: #222;
+}
+
+header {
+    background: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #6a0dad;
+}
+
+.section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h1, h2 {
+    color: #6a0dad;
+}
+
+.button {
+    background: #6a0dad;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: white;
+    margin-top: 40px;
+}
+
+.lang-btn {
+    cursor: pointer;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div>
+<span class="lang-btn" onclick="switchLang()">FR / EN</span>
+</div>
+
+<nav>
+<a href="#music">Music</a>
+<a href="#store">Store</a>
+<a href="#lessons">Lessons</a>
+<a href="#freelance">Freelance</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<div id="content-en">
+
+<section class="section">
+<h1>Lino</h1>
+<p>Eclectic multi-instrumentalist blending live instrumentation and electronic production.</p>
+<p>Funk • Rock • Hip Hop • Jazz • Fusion • Groove-driven music with soul.</p>
+<a class="button" href="https://lino4.bandcamp.com/" target="_blank">Listen on Bandcamp</a>
+</section>
+
+<section id="music" class="section">
+<h2>Music</h2>
+<p>I create independent music inspired by groove, syncopation, powerful basslines and expressive melodies. 
+No streaming platforms — direct support only.</p>
+
+<iframe style="border: 0; width: 100%; height: 120px;" 
+src="https://bandcamp.com/EmbeddedPlayer/album=YOUR_ALBUM_ID/size=large/bgcol=ffffff/linkcol=6a0dad/tracklist=false/artwork=small/" 
+seamless>
+</iframe>
+
+<p>
+<a href="https://www.youtube.com/@linoschockaert8825" target="_blank">YouTube Channel</a>
+</p>
+</section>
+
+<section id="store" class="section">
+<h2>Store – Sheet Music & PDFs</h2>
+
+<div class="product">
+<h3>Guitar Transcription Pack</h3>
+<p>Detailed PDF tabs and notation.</p>
+<p><strong>25 CHF</strong></p>
+<a class="button" href="#">Buy</a>
+</div>
+
+<div class="product">
+<h3>Music Theory Workbook</h3>
+<p>Harmony, ear training, practical exercises.</p>
+<p><strong>20 CHF</strong></p>
+<a class="button" href="#">Buy</a>
+</div>
+
+</section>
+
+<section id="lessons" class="section">
+<h2>Private Lessons</h2>
+
+<p><strong>All Levels – Beginner to Advanced</strong></p>
+<p>Guitar • Bass • Music Theory • Production</p>
+
+<h3>Pricing</h3>
+<ul>
+<li>60 min – 60 CHF</li>
+<li>45 min – 45 CHF</li>
+<li>30 min – 35 CHF</li>
+<li>16 Lesson Pack – 960 CHF</li>
+</ul>
+
+<p>Online or in Lausanne (studio or home visits within 10km).</p>
+<p>+5–10 CHF travel fee for home visits.</p>
+
+<h3>Lesson Structure</h3>
+<p>
+Personalised learning plan.  
+Song-based practice.  
+Harmony & theory integration.  
+Ear training.  
+PDF worksheets included.
+</p>
+
+<p>
+Booking: WhatsApp / Phone  
++41 76 280 69 26  
+Email: linoschockaert@gmail.com
+</p>
+</section>
+
+<section id="freelance" class="section">
+<h2>Freelance Musician</h2>
+
+<p>Available as:</p>
+<ul>
+<li>Session Bassist</li>
+<li>Session Guitarist</li>
+<li>Music Producer</li>
+<li>Production Coach</li>
+</ul>
+
+<p>Professional, groove-focused, adaptable across genres.</p>
+
+<p>Contact for collaboration inquiries.</p>
+</section>
+
+<section id="contact" class="section">
+<h2>Contact</h2>
+
+<p>Email: linoschockaert@gmail.com</p>
+<p>Instagram: @_linoschockaert</p>
+<p>YouTube (Music): @linoschockaert8825</p>
+<p>YouTube (Lessons): @linomusicschool</p>
+
+</section>
+
+</div>
+
+
+<div id="content-fr" style="display:none;">
+
+<section class="section">
+<h1>Lino</h1>
+<p>Multi-instrumentiste éclectique mélangeant instruments live et production électronique.</p>
+<p>Funk • Rock • Hip Hop • Jazz • Fusion • Groove puissant et mélodies expressives.</p>
+<a class="button" href="https://lino4.bandcamp.com/" target="_blank">Écouter sur Bandcamp</a>
+</section>
+
+<section class="section">
+<h2>Musique</h2>
+<p>Musique indépendante vendue directement aux auditeurs. Pas de streaming.</p>
+</section>
+
+<section class="section">
+<h2>Boutique – Partitions & PDFs</h2>
+<p>Partitions, transcriptions, exercices de théorie.</p>
+</section>
+
+<section class="section">
+<h2>Cours Privés</h2>
+<p>Tous niveaux – Guitare, Basse, Théorie, Production.</p>
+<p>Pack 16 leçons : 960 CHF</p>
+<p>En ligne ou à Lausanne.</p>
+</section>
+
+<section class="section">
+<h2>Musicien Freelance</h2>
+<p>Bassiste, guitariste, producteur disponible pour projets.</p>
+</section>
+
+<section class="section">
+<h2>Contact</h2>
+<p>Email: linoschockaert@gmail.com</p>
+</section>
+
+</div>
+
+<footer>
+<p>© 2026 Lino – Independent Artist</p>
+</footer>
+
+<script>
+function switchLang() {
+    var en = document.getElementById("content-en");
+    var fr = document.getElementById("content-fr");
+
+    if (en.style.display === "none") {
+        en.style.display = "block";
+        fr.style.display = "none";
+    } else {
+        en.style.display = "none";
+        fr.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
